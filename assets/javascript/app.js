@@ -14,20 +14,6 @@ $.ajax({
 }).done(function(response) {
         var results = response.data;
         console.log(results);
-
-        // for (var i = 0; i < results.length; i++) {
-        //     var animalDiv = $("<div>");
-        //     var p = $("<p>").text("Rating: " + results[i].rating);
-        //     var animalImage = $("<img>");
-        //     animalImage.attr("src", results[i].images.fixed_height_still.url);
-        //     animalImage.attr("data-still", results[i].images.fixed_height_still.url);
-        //     animalImage.attr("data-animate", results[i].images.fixed_height.url);
-        //     animalImage.attr("data-state", "still");
-        //     animalImage.addClass("animalGif");
-        //     animalDiv.append(p);
-        //     animalDiv.append(animalImage);
-        //     animalDiv.addClass("gifDiv");
-        //     $("#animal-view").append(animalDiv);
         })
 };
 
