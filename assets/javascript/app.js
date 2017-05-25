@@ -20,5 +20,17 @@ $.ajax({
         console.log(results);
         });
 });
+//Firebase Database -- needed to incorporate google hotel api 
+var config = {
+    apiKey: "AIzaSyClTOHIFhCAp2VtAga6fgZgs_Tdn0X7ue4",
+    authDomain: "staynplay-db2.firebaseapp.com",
+    databaseURL: "https://staynplay-db2.firebaseio.com",
+    projectId: "staynplay-db2",
+    storageBucket: "staynplay-db2.appspot.com",
+    messagingSenderId: "61188880759"
+  };
+  firebase.initializeApp(config);
+
+
 });
 
