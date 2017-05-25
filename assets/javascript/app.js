@@ -1,10 +1,14 @@
+$(document).ready(function(){
+
+
+
 // ticketmaster API boilerplate
+ $("#addEventBtn").on("click", function(){
 
-function getEvents() {
 
-var zip = $(#PLACEHOLDER).val().trim();
-var startDate = $(#PLACEHOLDER).val().trim();
-var endDate = $(#PLACEHOLDER).val().trim();
+var zip = $("#zipInput").val().trim();
+var startDate = $("#startDateInput").val().trim();
+var endDate = $("#endDateInput").val().trim();
 var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?countryCode=US&postalCode=" + zip + "&startDateTime=" + startDate + "&endDateTime=" + endDate + "&apikey=Y7d6IhdzuKbg2Vw9Vij5Sb1q8q7kP63r";
 
 $.ajax({
@@ -14,9 +18,7 @@ $.ajax({
 }).done(function(response) {
         var results = response.data;
         console.log(results);
-        })
-};
-
-getEvents();
-
+        });
+});
+});
 
